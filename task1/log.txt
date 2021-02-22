@@ -1,0 +1,19 @@
+commit a727533a5eddd16c832c67101fbd764958181b46 (HEAD -> master)
+Author: Анна Петрачкова <p.anytk@mail.ru>
+Date:   Mon Feb 15 22:52:14 2021 +0300
+
+    task1
+
+commit e31eb7b3f99cc3db98b4a266591b12938e2c5ed0
+Author: Анна Петрачкова <p.anytk@mail.ru>
+Date:   Mon Feb 15 22:43:13 2021 +0300
+
+ add .gitignore
+
+commit f5bfd4984fe294003ebe2673c25a11bf1b17a855
+Author: Анна Петрачкова <p.anytk@mail.ru>
+Date:   Mon Feb 15 22:42:53 2021 +0300
+
+    “add
+(END)
+//done
