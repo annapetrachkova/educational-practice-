@@ -10,27 +10,26 @@
     <div class="container">
         <div class="wrapper">
             <header>
-                <div class="header__logo">
+                <div>
                     <a><img class="logo" src="./assets/logo.jpg" alt="logotype"></a>
                 </div>
-                <div class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item"><a href="#">Каталог услуг и скидок</a></li>
-                        <li class="header__nav-item"><a href="#"><div class="add-adv">
+                <nav class="header-nav">
+                    <ul class="header-list">
+                        <li><a href="#">Каталог услуг и скидок</a></li>
+                        <li><a href="#"><div class="add-adv">
                             Добавить объявление
                         </div></a></li>
-                        <li class="header__nav-item">
+                        <li>
                             <ul class="user-block">
                                 <li class="user-logo"><img src="./assets/user.jpg" alt=""></li>
                                 <ul class="user-list">
-                                        <li class="user-item guest">Анна Петрачкова</li>
-                                        <li class="user-item user"></li>
-                                       <li class="user-item exit"><a href="index-guest.html">Выход</a></li>
+                                    <li>Анна Петрачкова</li>
+                                    <li><a href="index-guest.html">Выход</a></li>
                                 </ul>
                             </ul>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </header> 
             <main>
                 <div class="search-block">
@@ -38,7 +37,7 @@
                         <form action="" class="date">
                             <input type="date" name="calendar">
                         </form>
-                        <span class="for">-</span>
+                        <span>-</span>
                         <form action="" class="date">
                             <input type="date" name="calendar">
                         </form>
@@ -68,375 +67,377 @@
                     </form>
                     <button class="search-btn" type="submit">Поиск</button>
                 </div>
-                <div class="adve">
-                    <img class="remont-logo" src="./assets/remont.jpg" alt="">
-                    <div class="adve-description">
-                        <div class="name-rate">
-                            <span class="adve-name">Ремонт стиральных машин</span>
-                            <span class="rate">Рейтинг: 5</span>
-                        </div>
-                        <div class="headlines">
-                            <span class="sell">Скидка 15%</span>
-                            <span class="adve-reseller">Анна Петрачкова</span>
-                            <a href="http://stiralkino.by/" class="adve-href">http://stiralkino.by/</a>
-                        </div>
-                        <div class="description-text">
-                            <p>Быстрый ремонт всех видов и марок стиральных машин в Минске на дому. Оперативная работа. Бюджетные цены. Гарантия качества 100%.</p>
-                        </div>
-                        <div class="hash">
-                            <span>#Бытовые услуги</span>
-                            <span>#Ремонт</span>
-                            <span>#Строительные работы</span>
-                            <span>#Прочие услуги</span>
-                        </div>
-                        <div class="end">
-                            <span>01.02.2021 - 01.05.2021</span>
-                            <a href="#" class="adve-href">Редактировать</a>
-                            <a href="#" class="adve-href">Удалить</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="comments">
-                    <h1>Отзывы</h1>
-                    <div class="com-1">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">5</p>
-                        <p class="com">Мастер приехал вовремя, трезвый, аккуратный, вежливый. Примерно за час исправил проблему с поступлением воды в стиральную машину. Спасибо!</p>    
-                    </div>
-                    <div class="com-2">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">5</p>
-                        <p class="com">Быстро дозвонилась, мастер ответил на все вопросы. Починили, теперь как и раньше греет воду!</p>
-                    </div>
-                    <div class="com-3">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">5</p>
-                        <p class="com">Остался доволен ремонтом. По ценам вполне нормально. Главное что решили проблему быстро.</p>
-                    </div>
-                </div>
-                <!-- 2 -->
-                <div class="adve">
-                    <img class="remont-logo" src="./assets/profi.jpg" alt="">
-                    <div class="adve-description">
-                        <div class="name-rate">
-                            <span class="adve-name">Репетиторы</span>
-                            <span class="rate">Рейтинг: 4</span>
-                        </div>
-                        <div class="headlines">
-                            <span class="sell">Скидка 10%</span>
-                            <span class="adve-reseller">Степан</span>
-                            <a href="https://profi-bel.by/repetitor/" class="adve-href">https://profi-bel.by/repetitor/</a>
-                        </div>
-                        <div class="description-text">
-                            <p>Бесплатный поиск репетиторов на PROFI.RU. Для любой задачи есть профи. Выбирай подходящие предложения специалистов. Достоверные отзывы. Занятия очно и онлайн. Удобный поиск. 7 млн. клиентов. Поиск по вашим критериям. Занятия лично и онлайн.</p>
-                        </div>
-                        <div class="hash">
-                            <span>#Образовательные услуги</span>
-                            <span>#Прочие услуги</span>
-                        </div>
-                        <div class="end">
-                            <span>01.01.2021 - 21.03.2021</span>
+                <section>
+                    <div class="adve">
+                        <img class="service-photo" src="./assets/remont.jpg" alt="">
+                        <div class="adve-description">
+                            <div class="name-rate">
+                                <span class="adve-name">Ремонт стиральных машин</span>
+                                <span class="rate">Рейтинг: 5</span>
+                            </div>
+                            <div class="headlines">
+                                <span class="sell">Скидка 15%</span>
+                                <span>Анна Петрачкова</span>
+                                <a href="http://stiralkino.by/" class="adve-href">http://stiralkino.by/</a>
+                            </div>
+                            <div class="description-text">
+                                <p>Быстрый ремонт всех видов и марок стиральных машин в Минске на дому. Оперативная работа. Бюджетные цены. Гарантия качества 100%.</p>
+                            </div>
+                            <div class="hash">
+                                <span>#Бытовые услуги</span>
+                                <span>#Ремонт</span>
+                                <span>#Строительные работы</span>
+                                <span>#Прочие услуги</span>
+                            </div>
+                            <div class="validity-date">
+                                <span>01.02.2021 - 01.05.2021</span>
+                                <a href="#" class="adve-href">Редактировать</a>
+                                <a href="#" class="adve-href">Удалить</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="comments">
-                    <h1>Отзывы</h1>
-                    <div class="com-1">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">4</p>
-                        <p class="com">Прекрасный сайт для поиска репетиторов. С помощь него мы нашли отличного репетитора! Дочь довольна.</p>
-                    </div>
-                    <div class="com-2">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">4</p>
-                        <p class="com">Здесь только профессионалы своего дела. Результат виден через месяц уроков. Может научить самого неспособного ученика.</p>
-                    </div>
-                    <a href="#" class="write-com">Оставить отзыв</a>
-                </div>
-                <!-- 3 -->
-                <div class="adve">
-                    <img class="remont-logo" src="./assets/nails.jpg" alt="">
-                    <div class="adve-description">
-                        <div class="name-rate">
-                            <span class="adve-name">Маникюр и педикюр</span>
-                            <span class="rate">Рейтинг: 3</span>
+                    <div class="comments">
+                        <h1>Отзывы</h1>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">5</p>
+                            <p class="com-text">Мастер приехал вовремя, трезвый, аккуратный, вежливый. Примерно за час исправил проблему с поступлением воды в стиральную машину. Спасибо!</p>
                         </div>
-                        <div class="headlines">
-                            <span class="sell">Скидка 30%</span>
-                            <span class="adve-reseller">Алеся Хаткевич</span>
-                            <a href="https://fokanail.by/" class="adve-href">https://fokanail.by/</a>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">5</p>
+                            <p class="com-text">Быстро дозвонилась, мастер ответил на все вопросы. Починили, теперь как и раньше греет воду!</p>
                         </div>
-                        <div class="description-text">
-                            <p>Ваш идеальный салон МАНИКЮРА и ПЕДИКЮРА в Минске. Всем новым клиентам СКИДКА 30% на маникюр или педикюр! Стерилизация инструмента. Дизан любой сложности в подарок.</Диза></p>
-                        </div>
-                        <div class="hash">
-                            <span>#Красота и здоровье</span>
-                        </div>
-                        <div class="end">
-                            <span>12.12.2020 - 31.03.2021</span>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">5</p>
+                            <p class="com-text">Остался доволен ремонтом. По ценам вполне нормально. Главное что решили проблему быстро.</p>
                         </div>
                     </div>
-                </div>
-                <div class="comments">
-                    <h1>Отзывы</h1>
-                    <div class="com-1">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">3</p>
-                        <p class="com">Хочу сказать спасибо мастеру Илоне. Очень порадовало качество и аккуратность её работы. Сама мастер приятна в общении и доброжелательна.</p>
-                    </div>
-                    <div class="com-2">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">3</p>
-                        <p class="com">Пришла вовремя, но при этом пришлось ждать пока мастер освободится. Появились отслойки на ногтях спустя неделю. Не понравилось отношение к клиентам.</p>
-                    </div>
-                    <a href="#" class="write-com">Оставить отзыв</a>
-                </div>
-                <!-- 4 -->
-                <div class="adve">
-                    <img class="remont-logo" src="./assets/clean.jpg" alt="">
-                    <div class="adve-description">
-                        <div class="name-rate">
-                            <span class="adve-name">Клининговая компания</span>
-                            <span class="rate">Рейтинг: 5</span>
-                        </div>
-                        <div class="headlines">
-                            <span class="sell">Скидка 15%</span>
-                            <span class="adve-reseller">Евгения</span>
-                            <a href="https://clean-up.by/" class="adve-href">https://clean-up.by/</a>
-                        </div>
-                        <div class="description-text">
-                            <p>Хотите чистоту и порядок? Все виды уборки. Безопасная бытовая химия. Быстрая работа. Профессиональные клинеры. Скидка предоставляется всем новым клиентам.</p>
-                        </div>
-                        <div class="hash">
-                            <span>#Бытовые услуги</span>
-                            <span>#Ремонт</span>
-                            <span>#Прочие услуги</span>
-                        </div>
-                        <div class="end">
-                            <span>01.12.2020 - 09.04.2021</span>
+                    <!-- 2 -->
+                    <div class="adve">
+                        <img class="service-photo" src="./assets/profi.jpg" alt="">
+                        <div class="adve-description">
+                            <div class="name-rate">
+                                <span class="adve-name">Репетиторы</span>
+                                <span class="rate">Рейтинг: 4</span>
+                            </div>
+                            <div class="headlines">
+                                <span class="sell">Скидка 10%</span>
+                                <span>Степан</span>
+                                <a href="https://profi-bel.by/repetitor/" class="adve-href">https://profi-bel.by/repetitor/</a>
+                            </div>
+                            <div class="description-text">
+                                <p>Бесплатный поиск репетиторов на PROFI.RU. Для любой задачи есть профи. Выбирай подходящие предложения специалистов. Достоверные отзывы. Занятия очно и онлайн. Удобный поиск. 7 млн. клиентов. Поиск по вашим критериям. Занятия лично и онлайн.</p>
+                            </div>
+                            <div class="hash">
+                                <span>#Образовательные услуги</span>
+                                <span>#Прочие услуги</span>
+                            </div>
+                            <div class="validity-date">
+                                <span>01.01.2021 - 21.03.2021</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="comments">
-                    <h1>Отзывы</h1>
-                    <div class="com-1">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">5</p>
-                        <p class="com">Оперативно, чисто, быстро! Очень вежливые и корректные ребята. Спасибо!</p>
+                    <div class="comments">
+                        <h1>Отзывы</h1>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">4</p>
+                            <p class="com-text">Прекрасный сайт для поиска репетиторов. С помощь него мы нашли отличного репетитора! Дочь довольна.</p>
+                        </div>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">4</p>
+                            <p class="com-text">Здесь только профессионалы своего дела. Результат виден через месяц уроков. Может научить самого неспособного ученика.</p>
+                        </div>
+                        <a href="#" class="write-com">Оставить отзыв</a>
                     </div>
-                    <div class="com-2">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">4</p>
-                        <p class="com">Очень довольна услугами компании. Быстро приняли заказ. Девушки-клинеры очень тактичные.</p>
-                    </div>
-                    <div class="com-3">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">5</p>
-                        <p class="com">Спасибо компании за оперативную уборку моей квартиры. Все было ужасно, но девушки-клинеры справились на отлично!</p>
-                    </div>
-                    <a href="#" class="write-com">Оставить отзыв</a>
-                </div>
-                <!-- 5 -->
-                <div class="adve">
-                    <img class="remont-logo" src="./assets/ps.jpg" alt="">
-                    <div class="adve-description">
-                        <div class="name-rate">
-                            <span class="adve-name">Услуги фотошопа</span>
-                            <span class="rate">Рейтинг: 0</span>
-                        </div>
-                        <div class="headlines">
-                            <span class="sell">Скидка 50%</span>
-                            <span class="adve-reseller">ООО Боннети</span>
-                            <a href="https://www.prettyphoto.ru/" class="adve-href">https://www.prettyphoto.ru/</a>
-                        </div>
-                        <div class="description-text">
-                            <p>Услуги фотошопа в г.Минск. Услуги фотошопа в городе Минск. Огромный выбор специалистов по обработке и восстановлению фото! Закажите обработку фото по выгодной цене.</p>
-                        </div>
-                        <div class="hash">
-                            <span>#Фото и видеосъемка</span>
-                            <span>#Прочие услуги</span>
-                        </div>
-                        <div class="end">
-                            <span>14.11.2020 - 14.09.2021</span>
+                    <!-- 3 -->
+                    <div class="adve">
+                        <img class="service-photo" src="./assets/nails.jpg" alt="">
+                        <div class="adve-description">
+                            <div class="name-rate">
+                                <span class="adve-name">Маникюр и педикюр</span>
+                                <span class="rate">Рейтинг: 3</span>
+                            </div>
+                            <div class="headlines">
+                                <span class="sell">Скидка 30%</span>
+                                <span>Алеся Хаткевич</span>
+                                <a href="https://fokanail.by/" class="adve-href">https://fokanail.by/</a>
+                            </div>
+                            <div class="description-text">
+                                <p>Ваш идеальный салон МАНИКЮРА и ПЕДИКЮРА в Минске. Всем новым клиентам СКИДКА 30% на маникюр или педикюр! Стерилизация инструмента. Дизан любой сложности в подарок.</Диза></p>
+                            </div>
+                            <div class="hash">
+                                <span>#Красота и здоровье</span>
+                            </div>
+                            <div class="validity-date">
+                                <span>12.12.2020 - 31.03.2021</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="comments">
-                    <h1>Нет отзывов</h1>
-                    <a href="#" class="write-com">Оставить отзыв</a>
-                </div>
-                <!-- 6 -->
-                <div class="adve">
-                    <img class="remont-logo" src="./assets/lawyer.jpg" alt="">
-                    <div class="adve-description">
-                        <div class="name-rate">
-                            <span class="adve-name">Помощь адвоката</span>
-                            <span class="rate">Рейтинг: 3</span>
+                    <div class="comments">
+                        <h1>Отзывы</h1>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">3</p>
+                            <p class="com-text">Хочу сказать спасибо мастеру Илоне. Очень порадовало качество и аккуратность её работы. Сама мастер приятна в общении и доброжелательна.</p>
                         </div>
-                        <div class="headlines">
-                            <span class="sell">Скидка 20%</span>
-                            <span class="adve-reseller">ООО Боннети</span>
-                            <a href="https://advokat-lawyer.by/" class="adve-href">https://advokat-lawyer.by/</a>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">3</p>
+                            <p class="com-text">Пришла вовремя, но при этом пришлось ждать пока мастер освободится. Появились отслойки на ногтях спустя неделю. Не понравилось отношение к клиентам.</p>
                         </div>
-                        <div class="description-text">
-                            <p> Адвокат в Минске Бажанов Евгений Валентинович: юридическая помощь и консультация адвоката по гражданским, жилищным, семейным делам. Стаж моей работы как адвоката в Минске составляет более 15 лет.</p>
-                        </div>
-                        <div class="hash">
-                            <span>#Юридические услуги</span>
-                        </div>
-                        <div class="end">
-                            <span>02.11.2020 - 02.07.2021</span>
+                        <a href="#" class="write-com">Оставить отзыв</a>
+                    </div>
+                    <!-- 4 -->
+                    <div class="adve">
+                        <img class="service-photo" src="./assets/clean.jpg" alt="">
+                        <div class="adve-description">
+                            <div class="name-rate">
+                                <span class="adve-name">Клининговая компания</span>
+                                <span class="rate">Рейтинг: 5</span>
+                            </div>
+                            <div class="headlines">
+                                <span class="sell">Скидка 15%</span>
+                                <span>Евгения</span>
+                                <a href="https://clean-up.by/" class="adve-href">https://clean-up.by/</a>
+                            </div>
+                            <div class="description-text">
+                                <p>Хотите чистоту и порядок? Все виды уборки. Безопасная бытовая химия. Быстрая работа. Профессиональные клинеры. Скидка предоставляется всем новым клиентам.</p>
+                            </div>
+                            <div class="hash">
+                                <span>#Бытовые услуги</span>
+                                <span>#Ремонт</span>
+                                <span>#Прочие услуги</span>
+                            </div>
+                            <div class="validity-date">
+                                <span>01.12.2020 - 09.04.2021</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="comments">
-                    <h1>Отзывы</h1>
-                    <div class="com-1">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">3</p>
-                        <p class="com">Помог отсудить у жены всё имущество. Но жалко жену. Дороговато.</p>
+                    <div class="comments">
+                        <h1>Отзывы</h1>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">5</p>
+                            <p class="com-text">Оперативно, чисто, быстро! Очень вежливые и корректные ребята. Спасибо!</p>
+                        </div>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">4</p>
+                            <p class="com-text">Очень довольна услугами компании. Быстро приняли заказ. Девушки-клинеры очень тактичные.</p>
+                        </div>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">5</p>
+                            <p class="com-text">Спасибо компании за оперативную уборку моей квартиры. Все было ужасно, но девушки-клинеры справились на отлично!</p>
+                        </div>
+                        <a href="#" class="write-com">Оставить отзыв</a>
                     </div>
-                    <a href="#" class="write-com">Оставить отзыв</a>
-                </div>
-                <!-- 7 -->
-                <div class="adve">
-                    <img class="remont-logo" src="./assets/ceiling.jpg" alt="">
-                    <div class="adve-description">
-                        <div class="name-rate">
-                            <span class="adve-name">Натяжные потолки</span>
-                            <span class="rate">Рейтинг: 2</span>
-                        </div>
-                        <div class="headlines">
-                            <span class="sell">Скидка 30%</span>
-                            <span class="adve-reseller">Алеся Хаткевич</span>
-                            <a href="https://houze.by/" class="adve-href">https://houze.by/</a>
-                        </div>
-                        <div class="description-text">
-                            <p>Мы обеспечиваем наших замерщиков защитными масками и дезинфицирующими средствами. Дарим дополнительную скидку 10% новоселам, военным, пенсинерам и многодетным. Рассрочка.</p>
-                        </div>
-                        <div class="hash">
-                            <span>#Ремонт</span>
-                            <span>#Строительные услуги</span>
-                            <span>#Бытовые услуги</span>
-                        </div>
-                        <div class="end">
-                            <span>09.10.2020 - 09.05.2021</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="comments">
-                    <h1>Отзывы</h1>
-                    <div class="com-1">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">2</p>
-                        <p class="com">Строители грубияны. Потолок делали очень долго и получилось неаккуратно. Еще и агрызались. Теперь понятно, почему так дешево.</p>
-                    </div>
-                    <a href="#" class="write-com">Оставить отзыв</a>
-                </div>
-                <!-- 8 -->
-                <div class="adve">
-                    <img class="remont-logo" src="./assets/sport.jpg" alt="">
-                    <div class="adve-description">
-                        <div class="name-rate">
-                            <span class="adve-name">Спортивное питание</span>
-                            <span class="rate">Рейтинг: 4</span>
-                        </div>
-                        <div class="headlines">
-                            <span class="sell">Скидка 5%</span>
-                            <span class="adve-reseller">Анна Петрачкова</span>
-                            <a href="https://gamma.by/" class="adve-href">https://gamma.by/</a>
-                        </div>
-                        <div class="description-text">
-                            <p>Товары от 2,7 BYN. Удобная форма оплаты. Закажите бесплатную онлайн-консультацию! Доставка в сжатые сроки по Минску. Достигайте желаемого результата вместе с нами!</p>
-                        </div>
-                        <div class="hash">
-                            <span>#Прочие услуги</span>
-                        </div>
-                        <div class="end">
-                            <span>01.09.2020 - 01.09.2021</span>
-                            <a href="#" class="adve-href">Редактировать</a>
-                            <a href="#" class="adve-href">Удалить</a>
+                    <!-- 5 -->
+                    <div class="adve">
+                        <img class="service-photo" src="./assets/ps.jpg" alt="">
+                        <div class="adve-description">
+                            <div class="name-rate">
+                                <span class="adve-name">Услуги фотошопа</span>
+                                <span class="rate">Рейтинг: 0</span>
+                            </div>
+                            <div class="headlines">
+                                <span class="sell">Скидка 50%</span>
+                                <span>ООО Боннети</span>
+                                <a href="https://www.prettyphoto.ru/" class="adve-href">https://www.prettyphoto.ru/</a>
+                            </div>
+                            <div class="description-text">
+                                <p>Услуги фотошопа в г.Минск. Услуги фотошопа в городе Минск. Огромный выбор специалистов по обработке и восстановлению фото! Закажите обработку фото по выгодной цене.</p>
+                            </div>
+                            <div class="hash">
+                                <span>#Фото и видеосъемка</span>
+                                <span>#Прочие услуги</span>
+                            </div>
+                            <div class="validity-date">
+                                <span>14.11.2020 - 14.09.2021</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="comments">
-                    <h1>Отзывы</h1>
-                    <div class="com-1">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">4</p>
-                        <p class="com">Убедился лично в качестве продукции магазина. Спасибо за быструю доставку. Буду обращаться еще.</p>
+                    <div class="comments">
+                        <h1>Нет отзывов</h1>
+                        <a href="#" class="write-com">Оставить отзыв</a>
                     </div>
-                </div>
-                <!-- 9 -->
-                <div class="adve">
-                    <img class="remont-logo" src="./assets/wallpaper.jpg" alt="">
-                    <div class="adve-description">
-                        <div class="name-rate">
-                            <span class="adve-name">Оклейка обоями</span>
-                            <span class="rate">Рейтинг: 3</span>
-                        </div>
-                        <div class="headlines">
-                            <span class="sell">Скидка 25%</span>
-                            <span class="adve-reseller">Степан</span>
-                            <a href="https://domodel.by/categories/okleyka-oboyami" class="adve-href">https://domodel.by/</a>
-                        </div>
-                        <div class="description-text">
-                            <p>Оклейка обоями на профессиональном уровне. Быстро, качественно и недорого! Без выходных. Гарантия год. Звоните, останетесь довольны! Высокое качество. Короткие сроки выполнения. Оперативность. Низкая цена.</p>
-                        </div>
-                        <div class="hash">
-                            <span>#Ремонт</span>
-                            <span>#Бытовые услуги</span>
-                            <span>#Строительные работы</span>
-                        </div>
-                        <div class="end">
-                            <span>01.09.2020 - 01.08.2021</span>
+                    <!-- 6 -->
+                    <div class="adve">
+                        <img class="service-photo" src="./assets/lawyer.jpg" alt="">
+                        <div class="adve-description">
+                            <div class="name-rate">
+                                <span class="adve-name">Помощь адвоката</span>
+                                <span class="rate">Рейтинг: 3</span>
+                            </div>
+                            <div class="headlines">
+                                <span class="sell">Скидка 20%</span>
+                                <span>ООО Боннети</span>
+                                <a href="https://advokat-lawyer.by/" class="adve-href">https://advokat-lawyer.by/</a>
+                            </div>
+                            <div class="description-text">
+                                <p> Адвокат в Минске Бажанов Евгений Валентинович: юридическая помощь и консультация адвоката по гражданским, жилищным, семейным делам. Стаж моей работы как адвоката в Минске составляет более 15 лет.</p>
+                            </div>
+                            <div class="hash">
+                                <span>#Юридические услуги</span>
+                            </div>
+                            <div class="validity-date">
+                                <span>02.11.2020 - 02.07.2021</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="comments">
-                    <h1>Отзывы</h1>
-                    <div class="com-1">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">2</p>
-                        <p class="com">Качество ниже среднего. Не советую.</p>
+                    <div class="comments">
+                        <h1>Отзывы</h1>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">3</p>
+                            <p class="com-text">Помог отсудить у жены всё имущество. Но жалко жену. Дороговато.</p>
+                        </div>
+                        <a href="#" class="write-com">Оставить отзыв</a>
                     </div>
-                    <div class="com-2">
-                        <img class="user-com" src="./assets/user.jpg" alt="">
-                        <p class="mark">4</p>
-                        <p class="com">Сделали быстро и качественно. Нормально.</p>
-                    </div>
-                    <a href="#" class="write-com">Оставить отзыв</a>
-                </div>
-                <!-- 10 -->
-                <div class="adve">
-                    <img class="remont-logo" src="./assets/makeup.jpg" alt="">
-                    <div class="adve-description">
-                        <div class="name-rate">
-                            <span class="adve-name">Макияж</span>
-                            <span class="rate">Рейтинг: 0</span>
-                        </div>
-                        <div class="headlines">
-                            <span class="sell">Скидка 40%</span>
-                            <span class="adve-reseller">Евгения</span>
-                            <a href="https://galinamakeup.by/" class="adve-href">https://galinamakeup.by/</a>
-                        </div>
-                        <div class="description-text">
-                            <p>Меня зовут Галина.
-                                Я сертифицированный визажист и стилист по прическам в г.Минске. Проходила обучение в Академии Стиля (г.Минск). Выдано свидетельство государственного образца с присвоением квалификации. Сделаю макияж на выпускной, свадьбу, праздничное мероприятие. От меня вы уйдете красоткой.</p>
-                        </div>
-                        <div class="hash">
-                            <span>#Красота и здоровье</span>
-                        </div>
-                        <div class="end">
-                            <span>01.08.2021 - 01.03.2021</span>
+                    <!-- 7 -->
+                    <div class="adve">
+                        <img class="service-photo" src="./assets/ceiling.jpg" alt="">
+                        <div class="adve-description">
+                            <div class="name-rate">
+                                <span class="adve-name">Натяжные потолки</span>
+                                <span class="rate">Рейтинг: 2</span>
+                            </div>
+                            <div class="headlines">
+                                <span class="sell">Скидка 30%</span>
+                                <span>Алеся Хаткевич</span>
+                                <a href="https://houze.by/" class="adve-href">https://houze.by/</a>
+                            </div>
+                            <div class="description-text">
+                                <p>Мы обеспечиваем наших замерщиков защитными масками и дезинфицирующими средствами. Дарим дополнительную скидку 10% новоселам, военным, пенсинерам и многодетным. Рассрочка.</p>
+                            </div>
+                            <div class="hash">
+                                <span>#Ремонт</span>
+                                <span>#Строительные услуги</span>
+                                <span>#Бытовые услуги</span>
+                            </div>
+                            <div class="validity-date">
+                                <span>09.10.2020 - 09.05.2021</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="comments">
-                    <h1>Нет отзывов</h1>
-                    <a href="#" class="write-com">Оставить отзыв</a>
-                </div>
-                <p><a href="#" class="download-more">Загрузить ещё</a></p>
+                    <div class="comments">
+                        <h1>Отзывы</h1>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">2</p>
+                            <p class="com-text">Строители грубияны. Потолок делали очень долго и получилось неаккуратно. Еще и агрызались. Теперь понятно, почему так дешево.</p>
+                        </div>
+                        <a href="#" class="write-com">Оставить отзыв</a>
+                    </div>
+                    <!-- 8 -->
+                    <div class="adve">
+                        <img class="service-photo" src="./assets/sport.jpg" alt="">
+                        <div class="adve-description">
+                            <div class="name-rate">
+                                <span class="adve-name">Спортивное питание</span>
+                                <span class="rate">Рейтинг: 4</span>
+                            </div>
+                            <div class="headlines">
+                                <span class="sell">Скидка 5%</span>
+                                <span>Анна Петрачкова</span>
+                                <a href="https://gamma.by/" class="adve-href">https://gamma.by/</a>
+                            </div>
+                            <div class="description-text">
+                                <p>Товары от 2,7 BYN. Удобная форма оплаты. Закажите бесплатную онлайн-консультацию! Доставка в сжатые сроки по Минску. Достигайте желаемого результата вместе с нами!</p>
+                            </div>
+                            <div class="hash">
+                                <span>#Прочие услуги</span>
+                            </div>
+                            <div class="validity-date">
+                                <span>01.09.2020 - 01.09.2021</span>
+                                <a href="#" class="adve-href">Редактировать</a>
+                                <a href="#" class="adve-href">Удалить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <h1>Отзывы</h1>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">4</p>
+                            <p class="com-text">Убедился лично в качестве продукции магазина. Спасибо за быструю доставку. Буду обращаться еще.</p>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="adve">
+                        <img class="service-photo" src="./assets/wallpaper.jpg" alt="">
+                        <div class="adve-description">
+                            <div class="name-rate">
+                                <span class="adve-name">Оклейка обоями</span>
+                                <span class="rate">Рейтинг: 3</span>
+                            </div>
+                            <div class="headlines">
+                                <span class="sell">Скидка 25%</span>
+                                <span>Степан</span>
+                                <a href="https://domodel.by/categories/okleyka-oboyami" class="adve-href">https://domodel.by/</a>
+                            </div>
+                            <div class="description-text">
+                                <p>Оклейка обоями на профессиональном уровне. Быстро, качественно и недорого! Без выходных. Гарантия год. Звоните, останетесь довольны! Высокое качество. Короткие сроки выполнения. Оперативность. Низкая цена.</p>
+                            </div>
+                            <div class="hash">
+                                <span>#Ремонт</span>
+                                <span>#Бытовые услуги</span>
+                                <span>#Строительные работы</span>
+                            </div>
+                            <div class="validity-date">
+                                <span>01.09.2020 - 01.08.2021</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <h1>Отзывы</h1>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">2</p>
+                            <p class="com-text">Качество ниже среднего. Не советую.</p>
+                        </div>
+                        <div class="com">
+                            <img class="user-com" src="./assets/user.jpg" alt="">
+                            <p class="mark">4</p>
+                            <p class="com-text">Сделали быстро и качественно. Нормально.</p>
+                        </div>
+                        <a href="#" class="write-com">Оставить отзыв</a>
+                    </div>
+                    <!-- 10 -->
+                    <div class="adve">
+                        <img class="service-photo" src="./assets/makeup.jpg" alt="">
+                        <div class="adve-description">
+                            <div class="name-rate">
+                                <span class="adve-name">Макияж</span>
+                                <span class="rate">Рейтинг: 0</span>
+                            </div>
+                            <div class="headlines">
+                                <span class="sell">Скидка 40%</span>
+                                <span>Евгения</span>
+                                <a href="https://galinamakeup.by/" class="adve-href">https://galinamakeup.by/</a>
+                            </div>
+                            <div class="description-text">
+                                <p>Меня зовут Галина.
+                                    Я сертифицированный визажист и стилист по прическам в г.Минске. Проходила обучение в Академии Стиля (г.Минск). Выдано свидетельство государственного образца с присвоением квалификации. Сделаю макияж на выпускной, свадьбу, праздничное мероприятие. От меня вы уйдете красоткой.</p>
+                            </div>
+                            <div class="hash">
+                                <span>#Красота и здоровье</span>
+                            </div>
+                            <div class="validity-date">
+                                <span>01.08.2021 - 01.03.2021</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <h1>Нет отзывов</h1>
+                        <a href="#" class="write-com">Оставить отзыв</a>
+                    </div>
+                    <p><a href="#" class="download-more">Загрузить ещё</a></p>
+                </section>
             </main>
             <footer>
                 <img src="./assets/logo.jpg" class="logo" alt="">
@@ -444,7 +445,7 @@
                     <h3>Петрачкова Анна,<br> 2 курс, 6 группа</h3>
                     <a href="mailto:p.anytk@mail.ru" class="email">e-mail: p.anytk@mail.ru </a>
                 </div>
-                <span class="date-1">01.03.2021</span>
+                <span class="date-footer">01.03.2021</span>
             </footer>
         </div>
     </div>
