@@ -255,7 +255,7 @@ class adCollection {
 
     get(id) {
         if (id.valueOf() > 0) {
-            return adList.filter(item => item.id == id)
+            return adList.find(item => item.id == id)
         }
         return false;
     }
@@ -264,21 +264,16 @@ class adCollection {
         return typeof elem.id == 'string' && elem.id !== ""
             && typeof elem.description == 'string' && elem.description.length <= 200 && typeof elem.link == 'string' && elem.description !== ""
             && elem.createdAt instanceof Date && elem.createdAt !== ""
-            && typeof elem.link == 'string' && elem.link !== ""
+            && typeof elem.link == 'string'
             && typeof elem.vendor == 'string' && elem.vendor !== ""
             && elem.validUntil instanceof Date
-            && Array.isArray(elem.hashTags) && elem.hashTags !== ""
+            && Array.isArray(elem.hashTags)
             && typeof elem.discount == 'string' && elem.discount !== ""
             && elem.validUntil instanceof Date && elem.validUntil !== ""
     }
 
     add(newElem) {
         if (adCollection._validate(newElem)) {
-            for (let item of adList) {
-                if (item.id == newElem.id) {
-                    return 'Error'
-                }
-            }
             adList.push(newElem)
             return adList
         }
@@ -286,30 +281,41 @@ class adCollection {
     }
 
 
-    edit(id, propertyChange, changedValue) {
-        if (propertyChange === 'id' || propertyChange === 'vendor' || propertyChange === 'createdAt') {
-            return 'Error'
-        }
-        for (let item of adList) {
-            if (item.id === id) {
-                for (let key in item) {
-                    if (key === propertyChange) {
-                        item[key] = changedValue
-                    }
-                }
+    edit(id, propertyChange) {
+         for (let item in propertyChange) {
+            if (item === 'id' || item === 'vendor' || item === 'createdAt') {
+                return 'Error'
+            }
+            if (item === 'discount') {
+                adList.find(item => item.id === id).discount = propertyChange.discount
+                return true
+            }
+            if (item === 'link'){
+                adList.find(item => item.id === id).link = propertyChange.link
+                return true
+            }
+            if (item === 'validUntil'){
+                adList.find(item => item.id === id).validUntil = propertyChange.validUntil
+                return true
+            }
+            if (item === 'description'){
+                adList.find(item => item.id === id).description = propertyChange.description
+                return true
+            }
+            if (item === 'hashTags'){
+                adList.find(item => item.id === id).hashTags = propertyChange.hashTags
+                return true
             }
         }
-        return adList
+        return false
     }
 
     remove(id) {
-        if (!isNaN(id)) {
-            for (let i = 0; i < adList.length; i++) {
-                if (adList[i].id == id) {
-                    adList.splice(i, 1)
-                    return adList
-                }
-            }
+        if (typeof id === 'string') {
+            let i = adList.find(item => item.id === id);
+            adList.splice(i, 1)
+            return adList
+
         } else return false
     }
 
@@ -362,10 +368,10 @@ console.log(collection.add({id: '14',
     discount: '40%',
     hashTags: ['Прочие услуги']}))  // Error, 14 id уже есть
 
-console.log(collection.edit(4, 'discount', '70%'))
-console.log(collection.edit(16, 'id', '23')) // Error, нет такого id
+console.log(collection.edit('4', {discount: '70%'}))
+console.log(collection.edit('16', {id: '23'})) // Error, нет такого id
 
-console.log(collection.remove(3)) // удалит объявление id = 3
+console.log(collection.remove('3')) // удалит объявление id = 3
 
 console.log(collection.clear(collection))
 
