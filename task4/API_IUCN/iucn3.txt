@@ -1,0 +1,4 @@
+To be redirected to the Red List website page for this species, please use this method.
+ This method is to be used if you want to include a link to a species page in a report or publication.
+ This then makes sure that if internal IDs for the species are changing,
+ it will not affect your report
