@@ -257,17 +257,12 @@
 
 
     function getAd(id) {
-        return adList.filter(item => item.id == id)
+        return adList.find(item => item.id == id)
     }
     console.log(getAd(12))
 
     function addAd(newElem) {
         if (validateAd(newElem)) {
-            for (let item of adList) {
-                if (item.id == newElem.id) {
-                    return 'Error'
-                }
-            }
             adList.push(newElem)
             return adList
         }
@@ -293,33 +288,46 @@
         discount: '40%',
         hashTags: ['Прочие услуги']}))
 
-    function editAd(id, propertyChange, changedValue) {
-        if (propertyChange === 'id' || propertyChange === 'vendor' || propertyChange === 'createdAt') {
-            return 'Error'
-        }
-        for (let item of adList) {
-            if (item.id === id) {
-                for (let key in item) {
-                    if (key === propertyChange) {
-                        item[key] = changedValue
-                    }
-                }
+    function editAd(id, propertyChange) {
+        for (let item in propertyChange) {
+            if (item === 'id' || item === 'vendor' || item === 'createdAt') {
+                return 'Error'
+            }
+            if (item === 'discount') {
+                adList.find(item => item.id === id).discount = propertyChange.discount
+                return true
+            }
+            if (item === 'link'){
+                adList.find(item => item.id === id).link = propertyChange.link
+                return true
+            }
+            if (item === 'validUntil'){
+                adList.find(item => item.id === id).validUntil = propertyChange.validUntil
+                return true
+            }
+            if (item === 'description'){
+                adList.find(item => item.id === id).description = propertyChange.description
+                return true
+            }
+            if (item === 'hashTags'){
+                adList.find(item => item.id === id).hashTags = propertyChange.hashTags
+                return true
             }
         }
-        return adList
+        return false
     }
-    console.log(editAd(4, 'discount', '70%'))
-    console.log(editAd(16, 'id', '23'))
+    console.log(editAd('4', {discount: '70%'}))
+    console.log(editAd('16', {id: '23'}))
 
 
     function validateAd(elem) {
         return typeof elem.id == 'string' && elem.id !== ""
             && typeof elem.description == 'string' && elem.description.length <= 200 && typeof elem.link == 'string' && elem.description !== ""
             && elem.createdAt instanceof Date && elem.createdAt !== ""
-            && typeof elem.link == 'string' && elem.link !== ""
+            && typeof elem.link == 'string' && elem.link
             && typeof elem.vendor == 'string'
             && elem.validUntil instanceof Date
-            && Array.isArray(elem.hashTags) && elem.hashTags !== ""
+            && Array.isArray(elem.hashTags)
             && typeof elem.discount == 'string' && elem.discount !== ""
             && elem.validUntil instanceof Date && elem.validUntil !== ""
     }
@@ -345,19 +353,20 @@
         hashTags: ['Прочие услуги']
     }))
 
-    function removeAd (id) {
-        if (!isNaN(id)) {
-            for (let i = 0; i < adList.length; i++) {
-                if (adList[i].id == id) {
-                    adList.splice(i, 1)
-                    return adList
-                }
-            }
+    function removeAd(id) {
+        if (typeof id === 'string') {
+            let i = adList.find(item => item.id === id);
+            adList.splice(i, 1)
+            return adList
+
         } else return false
     }
-    console.log(removeAd("3"))
+    console.log(removeAd('3'))
 
 }());
+
+
+
 
 
 
