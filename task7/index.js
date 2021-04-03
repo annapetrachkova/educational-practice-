@@ -221,7 +221,7 @@ let adList = [
     }
 ]
 
-class adCollection {
+class AdCollection {
     _adList  = []
 
     constructor(adList){
@@ -273,7 +273,7 @@ class adCollection {
     }
 
     add(newElem) {
-        if (adCollection._validate(newElem)) {
+        if (AdCollection._validate(newElem)) {
             adList.push(newElem)
             return adList
         }
@@ -282,7 +282,7 @@ class adCollection {
 
 
     edit(id, propertyChange) {
-         for (let item in propertyChange) {
+        for (let item in propertyChange) {
             if (item === 'id' || item === 'vendor' || item === 'createdAt') {
                 return 'Error'
             }
@@ -321,9 +321,9 @@ class adCollection {
 
     addAll(array){
         let result = []
-        for(let item of this._adList) {
-            if (adCollection._validate(item)) {
-                array.push(item)
+        for(let item of array) {
+            if (AdCollection._validate(item)) {
+                this._adList.push(item)
             }
             else {
                 result.push(item)
@@ -337,7 +337,7 @@ class adCollection {
     }
 
 }
-let collection = new adCollection(adList)
+let collection = new AdCollection(adList)
 let collection2 = []
 
 console.log(collection.addAll(collection2))
@@ -347,7 +347,7 @@ console.log(collection.getPage(0, 4, {vendor: 'Анна Петрачкова'}))
 console.log(collection.getPage(0, 5, {validUntil: new Date('2021-06-01T24:00:00')}))
 
 console.log(collection.get(12))
-console.log(collection.get(22)) // покажет пустой массив потому что 22 не сущ
+console.log(collection.get(22)) // покажет undefined
 
 console.log(collection.add({id: '21',
     description: 'Суши от Rollbox',
