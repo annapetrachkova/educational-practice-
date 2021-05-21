@@ -1,0 +1,1 @@
+SELECT * FROM task11.ad WHERE user_id = 1 AND created_at=date(2021-03-01)
