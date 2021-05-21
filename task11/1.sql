@@ -1,0 +1,1 @@
+SELECT * FROM task1.ad order by created_at DESC
