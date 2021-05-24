@@ -1,0 +1,1 @@
+SELECT datediff(curdate(),(date(min(created_at)))) FROM task11.ad;

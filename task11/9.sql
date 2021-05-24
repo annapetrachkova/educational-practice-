@@ -1,0 +1,1 @@
+SELECT * FROM task11.ad WHERE reviews > 3
